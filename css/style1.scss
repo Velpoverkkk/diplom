@@ -1,0 +1,26 @@
+
+
+$col:#ffffffff;
+$font:'Montserrat',sans-serif;
+.container5{
+    h4{
+    font-family: $font;
+    color:$col;
+    }
+}
+
+@mixin margr($marg){
+    margin-left:$marg;
+    margin-top:$marg;
+}
+
+@media(max-width:1200px){
+    .container1{
+               img{
+                   @include margr(30px);
+               }
+    }
+}
+.container1 {
+    height: 50px+50px;
+}
